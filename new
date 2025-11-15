@@ -1,1 +1,12 @@
-print ('Hello, World!')
+print('Book A: $10')
+print('Book B: $2.5')
+a = 10
+b = 2.5
+try:
+ x = int(input('Quantity of book A: '))
+ y = int(input('Quantity of book B: '))
+except ValueError:
+ print('Invalid input. Please enter numeric values.')
+else:
+ s = x * a + y * b
+ print(f'Total cost: {s:.2f}$')
